@@ -91,7 +91,7 @@ const Projects = () => {
         />
         <div className="flex justify-center mt-10">
           <a
-            href="https://wa.me/5581992813108"
+            href="https://wa.me/5581992813108?text=Opa%2C%20tenho%20interesse!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-4 px-8 py-4 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-green-600 transition-colors text-xl font-bold border-2 border-green-300 animate-bounce"

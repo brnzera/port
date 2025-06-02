@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
             <div className="flex items-center gap-4 mt-4">
               <a 
-                href="https://wa.me/5500123456789" 
+                href="https://wa.me/5581992813108?text=Opa%2C%20tenho%20interesse!" 
                 className="inline-flex items-center px-4 py-2 bg-green-600 rounded-md hover:bg-green-700 transition-colors text-white font-semibold"
                 target="_blank"
                 rel="noopener noreferrer"
