@@ -22,8 +22,30 @@ const Hero = () => {
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in">
+          <div className="flex flex-col items-center lg:items-start w-full">
+            {/* TiltedCard no mobile (centralizado acima do texto) */}
+            <div className="flex justify-center w-full mb-8 lg:hidden">
+              <TiltedCard
+                imageSrc={sb}
+                altText="Design Moderno"
+                captionText="Design Moderno e Profissional"
+                containerHeight="260px"
+                containerWidth="260px"
+                imageHeight="100%"
+                imageWidth="100%"
+                rotateAmplitude={12}
+                scaleOnHover={1.12}
+                showMobileWarning={false}
+                displayOverlayContent={true}
+                overlayContent={
+                  <div className="absolute inset-0 flex flex-col justify-end p-3 bg-gradient-to-t from-black/80 to-transparent rounded-b-[15px]">
+                    <p className="text-base font-semibold text-white drop-shadow-sm">SB Soluções & Branding</p>
+                  </div>
+                }
+              />
+            </div>
+            {/* Texto principal */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in text-center lg:text-left">
               SUA IDENTIDADE<br />
               DIGITAL ESTÁ<br />
               <span className=""> 
@@ -31,13 +53,11 @@ const Hero = () => {
               </span><br />
               SEM VOCÊ PERCEBER.
             </h1>
-            
-            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto lg:mx-0 animate-slide-up">
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto lg:mx-0 animate-slide-up text-center lg:text-left">
               Criamos sites e logomarcas que conectam sua marca com as pessoas certas. 
               Chega de perder clientes por falta de confiança! Tenha uma identidade forte, 
               autêntica e moderna para sua marca se destacar no mercado.
             </p>
-            
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-slide-up" style={{animationDelay: '0.2s'}}>
               <GradientButton
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
@@ -51,7 +71,7 @@ const Hero = () => {
               </GradientButton>
             </div>
           </div>
-
+          {/* TiltedCard no desktop (ao lado do texto) */}
           <div className="hidden lg:flex justify-center items-center">
             <TiltedCard
               imageSrc={sb}

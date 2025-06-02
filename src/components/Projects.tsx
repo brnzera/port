@@ -94,7 +94,7 @@ const Projects = () => {
             href="https://wa.me/5581992813108"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-4 px-8 py-4 bg-[#FF9800] text-white rounded-full shadow-lg hover:bg-orange-600 transition-colors text-xl font-bold border-2 border-orange-300 animate-bounce"
+            className="inline-flex items-center gap-4 px-8 py-4 bg-[#25D366] text-white rounded-full shadow-lg hover:bg-green-600 transition-colors text-xl font-bold border-2 border-green-300 animate-bounce"
             style={{ minWidth: 320 }}
           >
             <FaWhatsapp size={44} className="text-white drop-shadow-lg bg-white/10 rounded-full p-1" />

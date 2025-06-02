@@ -41,13 +41,7 @@ const Footer = () => {
 
           {/* Column 4 - Contact Info */}
           <div>
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold">Contato</h3>
-              <a href="https://www.instagram.com/sb_solucoesebranding/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-white hover:text-pink-400 transition-colors text-lg">
-                <Instagram size={26} className="mr-1" />
-                <span className="font-semibold">Instagram</span>
-              </a>
-            </div>
+            <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 flex-shrink-0" />

@@ -31,8 +31,8 @@ export const TeamMember: React.FC<TeamMemberProps> = ({
           src={image} 
           alt={name} 
           loading="lazy"
-          className="w-full h-full object-cover object-top scale-125"
-          whileHover={{ scale: 1.18 }}
+          className="w-full h-full object-cover object-top"
+          whileHover={{ scale: 1.10 }}
           transition={{ duration: 0.4 }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
